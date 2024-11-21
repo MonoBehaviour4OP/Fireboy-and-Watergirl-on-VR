@@ -10,5 +10,6 @@
 
 ## DEMO
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0985124d-1c69-4a63-8cb1-af4c6c1de738" width="80%">
+  <img src="https://github.com/user-attachments/assets/08d6deb3-c0a3-48ba-9ab2-f8757bb8d0c0" width="80%">
+  
 </p>
