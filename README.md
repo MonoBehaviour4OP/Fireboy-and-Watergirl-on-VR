@@ -21,3 +21,27 @@
 |----|------------|-------------------|------------|
 | 01 | 2024-10-24 |     제안 발표     | [PDF](Docs/presentations/오픈소스프로젝트%20MonoBehaviour팀%20제안%20발표.pdf)
 | 02 | 2024-11-07 | 상세개발계획 발표 | [PDF](Docs/presentations/오픈소스프로젝트%20MonoBehaviour팀%20상세개발계획%20발표.pdf)
+
+<br>
+
+## Contributors
+<table>
+  <td align="center">
+    <a href="https://github.com/Yoon-men">
+      <img src="https://avatars.githubusercontent.com/Yoon-men" alt="Yoon-men" width="100px;"><br>
+      Yoon-men
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/joun2301">
+      <img src="https://avatars.githubusercontent.com/joun2301" alt="joun2301" width="100px;"><br>
+      joun2301
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/hyeonsik62">
+      <img src="https://avatars.githubusercontent.com/hyeonsik62" alt="hyeonsik62" width="100px;"><br>
+      hyeonsik62
+    </a>
+  </td>
+</table>
