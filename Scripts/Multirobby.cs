@@ -88,18 +88,38 @@ public class Multirobby : MonoBehaviourPunCallbacks
     public override void OnCreatedRoom()
     {
         Debug.Log("방 생성 성공!");
-        PhotonNetwork.LoadLevel("MultiroomScene");  // MultiroomScene으로 이동
-    }
 
-    public override void OnCreateRoomFailed(short returnCode, string message)
-    {
-        Debug.LogError($"방 생성 실패: {message}");
+        // P1 역할 강제 설정 (방장)
+        PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable { { "P1Character", "Fireboy" } });
+
+        // P2가 입장할 때 Watergirl로 설정하기 위한 준비
+        PhotonNetwork.LoadLevel("MultiroomScene");  // MultiroomScene으로 이동
     }
 
     public override void OnJoinedRoom()
     {
         Debug.Log("방 입장 성공!");
+
+        // P2가 입장하면 Watergirl로 설정
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // P1 (방장)은 이미 Fireboy로 설정되어 있음
+            // P2는 Watergirl로 설정
+            PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable { { "P2Character", "Watergirl" } });
+        }
+
         PhotonNetwork.LoadLevel("MultiroomScene");  // MultiroomScene으로 이동
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        Debug.Log($"{otherPlayer.NickName}이 방을 떠났습니다.");
+
+        // P2가 나가면 방을 삭제
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 0)
+        {
+            PhotonNetwork.LeaveRoom(); // 방을 떠나게 하여 삭제
+        }
     }
 
     void OnBackButtonClicked()

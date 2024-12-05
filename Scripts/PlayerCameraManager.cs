@@ -101,7 +101,7 @@ public class PlayerCameraManager : MonoBehaviourPunCallbacks
             }
             else
             {
-                // If roles do not match the expected "Fireboy"/"Watergirl" combination, log an error
+                // 예상하지 못한 역할 조합이 있을 경우 처리
                 Debug.LogError("Unexpected role combination for players.");
             }
         }
@@ -110,6 +110,7 @@ public class PlayerCameraManager : MonoBehaviourPunCallbacks
             Debug.LogWarning("Not enough players in the room to assign cameras.");
         }
     }
+
 
 
     void OnDestroy()

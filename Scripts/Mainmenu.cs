@@ -25,6 +25,6 @@ public class Mainmenu : MonoBehaviour
         }
 
         PhotonNetwork.NickName = nickname;
-        PhotonNetwork.LoadLevel("MultirobbyScene"); // 로비 씬으로 전환
+        PhotonNetwork.LoadLevel("MultilobbyScene"); // 로비 씬으로 전환
     }
 }
