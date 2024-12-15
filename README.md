@@ -22,7 +22,7 @@
 | 01 | 2024-10-24 |     제안 발표     | [PDF](Docs/presentations/오픈소스프로젝트%20MonoBehaviour팀%20제안%20발표.pdf) |
 | 02 | 2024-11-07 | 상세개발계획 발표 | [PDF](Docs/presentations/오픈소스프로젝트%20MonoBehaviour팀%20상세개발계획%20발표.pdf) |
 | 03 | 2024-11-28 |     중간 발표     | [PDF](Docs/presentations/오픈소스프로젝트%20MonoBehaviour팀%20중간발표.pdf) |
-| 04 | 2024-12-12 |     최종 발표     |            |
+| 04 | 2024-12-12 |     최종 발표     | [PDF](Docs/presentations/오픈소스프로젝트%20MonoBehaviour팀%20최종%20발표.pdf) |
 
 <br>
 
